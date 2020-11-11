@@ -1,15 +1,81 @@
-$font-common: 'Open Sans', 'Arial', sans-serif;
-$font-heading: 'KG Summer Storm Rough', "Times New Roman", serif;
-
 $colors: (
-  accent1: #7E4DBC,
-  accent2: #FF6B00,
-  dark: #333333,
-  light: #ffffff,
-  secondary-dark: #909090,
-  secondary-medium: #CDCDCD,
-  secondary-light: #f9f9f9,
-  bg: #E5E5E5,
-  success: #28a745,
-  error: #B00020
-)
+  'headline-text': #272727,
+  'main-purple': #341C52,
+  'purple-light': #B097D0,
+  'paragraph-text': #6F6F6F,
+  'basic-white': #FFFFFF,
+  'second-grey': #E8E8E8,
+  'stroke': #D1D1D1,
+  'bg': #F5F5F5,
+  'success': #9FE2BF,
+  'error': #FF6262,
+  'caption': #AEA4BA
+);
+
+$font-family: 'Open Sans', 'Arial', sans-serif;
+
+$radius-large: 16px;
+$radius-small: 8px;
+
+@mixin h1{
+  font-size: 48px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+@mixin h2{
+  font-size: 40px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+@mixin h3{
+  font-size: 28px;
+  line-height: 1.14;
+  font-weight: 600;
+}
+
+@mixin h4{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 2.5;
+}
+
+@mixin button-text{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+@mixin headline{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+@mixin body-text{
+  font-size: 20px;
+  line-height: 1.45;
+  font-weight: 400;
+}
+
+@mixin body-small-text{
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@mixin label-text{
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@mixin caption-text{
+  font-size: 12px;
+  line-height: 1.75;
+  font-weight: 400;
+}
+

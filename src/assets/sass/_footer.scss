@@ -1,0 +1,31 @@
+.footer{
+  padding: 80px 0;
+  background-color: map-get($colors, main-purple);
+  color: map-get($colors, basic-white);
+  &-description{
+    opacity: 0.8;
+    width: 520px;
+    max-width: 100%;
+    padding-top: 30px;
+  }
+  &-grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &-title{
+    text-align: center;
+    padding-bottom: 55px;
+  }
+  &-logos{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    img{
+      display: block;
+      max-height: 72px;
+      width: auto;
+      margin-left: 32px;
+    }
+  }
+}

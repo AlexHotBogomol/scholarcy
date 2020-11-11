@@ -1,0 +1,88 @@
+.welcome{
+  min-height: 100vh;
+  padding: 32px 0 72px;
+  box-sizing: border-box;
+  background-color: map-get($colors, main-purple);
+  color: map-get($colors, basic-white);
+  &-headline{
+    @include headline;
+    margin-bottom: 16px;
+    padding-top: 32px;
+  }
+  &-title{
+    margin-bottom: 36px;
+  }
+  &-description{
+    margin-bottom: 60px;
+  }
+  &-grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-left{
+    width: 635px;
+    max-width: 100%;
+  }
+}
+
+.form{
+  width: 635px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  background-color: rgba(map-get($colors, basic-white), 0.1);
+  border-radius: $radius-large;
+  &-title{
+    margin-bottom: 20px;
+  }
+  &-subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    span{
+      @include label-text;
+      color: map-get($colors, error);
+    }
+  }
+  label{
+    display: block;
+    margin-bottom: 24px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  input{
+    @include body-small-text;
+    display: block;
+    width: 100%;
+    border-radius: $radius-small;
+    padding: 8px 16px;
+    background-color: map-get($colors, main-purple);
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    transition: 0.2s ease-in-out;
+    color: map-get($colors, basic-white);
+    &::placeholder{
+      color: rgba(map-get($colors, basic-white), 0.6);
+    }
+    &:hover{
+      background-color: darken(map-get($colors, main-purple), 3);
+    }
+    &:focus{
+      outline: none;
+      border: 1px solid map-get($colors, success);
+    }
+  }
+  .required{
+    color: map-get($colors, error);
+  }
+  .label-text{
+    @include label-text;
+    margin-bottom: 10px;
+  }
+  .btn{
+    margin-top: 62px;
+  }
+}

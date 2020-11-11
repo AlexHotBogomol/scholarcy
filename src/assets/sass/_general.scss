@@ -1,116 +1,174 @@
-body{
-  @include p3;
-  color: map-get($colors, dark);
+html, body{
+  @include body-text;
+  font-family: $font-family;
   min-width: 320px;
   overflow-x: hidden;
-  background-color: map-get($colors, light);
+  color: map-get($colors, headline-text);
+  background-color: map-get($colors, basic-white);
+}
+
+h1{
+  @include h1;
+}
+
+h2{
+  @include h2;
+}
+
+h3{
+  @include h3;
+}
+
+h4{
+  @include h4;
 }
 
 .container{
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.bg{
-  position: relative;
-  //z-index: 1;
-  &:before{
-    content: "";
-    top: 0;
-    bottom: 0;
-    left: 90px;
-    right: 90px;
-    position: absolute;
-    background-color: map-get($colors, secondary-light);
-    z-index: -1;
-  }
-}
-
-.has-accent-1-color{
-  color: map-get($colors, accent1);
-}
-.has-accent-2-color{
-  color: map-get($colors, accent2);
-}
-.has-dark-color{
-  color: map-get($colors, dark);
-}
-.has-light-color{
-  color: map-get($colors, light);
-}
-.has-secondary-dark-color{
-  color: map-get($colors, secondary-dark);
-}
-.has-secondary-medium-color{
-  color: map-get($colors, secondary-medium);
-}
-.has-secondary-light-color{
-  color: map-get($colors, secondary-light);
-}
-.has-bg-color{
-  color: map-get($colors, bg);
-}
-.has-success-color{
-  color: map-get($colors, success);
-}
-.has-error-color{
-  color: map-get($colors, error);
-}
-
-.wrapper{
-  width: 1200px;
+  width: 1460px;
   max-width: 100%;
+  padding: 0 15px;
   margin: 0 auto;
-  padding: 100px 15px;
   box-sizing: border-box;
 }
 
-.swiper-slide {
-  width: auto !important;
-}
-.wp-block-embed{
-  margin: 0 0 60px;
-}
-
-main{
-  overflow: hidden;
+.logo{
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.mc4wp-alert.mc4wp-success{
-  color: map-get($colors, success);
+.cards{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 120px;
 }
 
-.mc4wp-alert.mc4wp-error{
-  color: map-get($colors, error);
-}
-
-.pageSlider{
-  content: "";
-  position: fixed;
-  width: 200%;
-  height: 100vh;
-  display: none;
-  background: rgba(255,107,0,1);
-  z-index: 50;
-}
-
-.breadcrumb{
-  padding: 30px 0;
-  width: 1200px;
-  margin: 0 auto;
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 360px;
   max-width: 100%;
-  box-sizing: border-box;
-  span{
-    @include p3;
-    font-size: 18px;
+  &-description{
+    padding-top: 40px;
   }
-  a{
-    color: map-get($colors, dark);
-    text-decoration: none;
-    transition: 0.2s ease-in-out;
-    &:hover{
-      color: map-get($colors, accent2);
+}
+
+.quote{
+  display: block;
+  background-color: map-get($colors, bg);
+  padding: 40px;
+  border-radius: $radius-large;
+  &-avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 16px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-name{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &-position{
+    @include body-small-text;
+    opacity: 0.6;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &-description{
+    width: 820px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    &:before{
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url("data:image/svg+xml,%3Csvg width='52' height='45' viewBox='0 0 52 45' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M41.2034 23.1642C42.7968 23.1642 44.2528 23.441 45.5715 23.9945C46.8901 24.6033 48.044 25.4059 49.033 26.4022C49.967 27.4539 50.7088 28.6716 51.2582 30.0554C51.7528 31.4391 52 32.9613 52 34.6218C52 36.0609 51.7528 37.417 51.2582 38.69C50.7088 39.9631 49.967 41.0701 49.033 42.0111C48.044 42.952 46.8901 43.6716 45.5715 44.1697C44.1979 44.7232 42.7143 45 41.1209 45C39.2528 45 37.6045 44.6402 36.1759 43.9207C34.7474 43.2565 33.5661 42.3155 32.632 41.0978C31.643 39.9354 30.9287 38.5517 30.4892 36.9465C29.9946 35.3967 29.7474 33.7362 29.7474 31.9649C29.7474 29.4188 30.132 26.7343 30.9012 23.9114C31.6155 21.0886 32.7144 18.2934 34.1979 15.5258C35.6265 12.703 37.4122 9.9631 39.555 7.30628C41.6429 4.64945 44.033 2.21403 46.7253 2.61981e-06L49.7747 2.82288C50.2143 3.26569 50.544 3.68082 50.7637 4.06827C50.9286 4.45572 51.011 4.95388 51.011 5.56273C51.011 6.50369 50.544 7.3893 49.6099 8.21956C49.0605 8.82842 48.3462 9.631 47.4671 10.6273C46.588 11.6236 45.7088 12.7583 44.8297 14.0314C43.9506 15.3044 43.1539 16.7159 42.4396 18.2657C41.6704 19.8155 41.121 21.4483 40.7913 23.1642L41.2034 23.1642Z' fill='%23B097D0'/%3E%3Cpath d='M11.456 23.1642C13.0494 23.1642 14.5054 23.441 15.8241 23.9945C17.1427 24.6033 18.2966 25.4059 19.2856 26.4022C20.2196 27.4539 20.9614 28.6716 21.5108 30.0554C22.0054 31.4391 22.2526 32.9613 22.2526 34.6218C22.2526 36.0609 22.0054 37.417 21.5108 38.69C20.9614 39.9631 20.2196 41.0701 19.2856 42.0111C18.2966 42.952 17.1427 43.6716 15.8241 44.1697C14.4505 44.7232 12.9669 45 11.3736 45C9.50543 45 7.85709 44.6402 6.42853 43.9207C4.99997 43.2565 3.81866 42.3155 2.8846 41.0978C1.89559 39.9354 1.18131 38.5517 0.741753 36.9465C0.247251 35.3967 -1.53709e-07 33.7362 0 31.9649C2.20957e-07 29.4188 0.384613 26.7343 1.15384 23.9114C1.86812 21.0886 2.96702 18.2934 4.45052 15.5258C5.87909 12.703 7.66479 9.9631 9.80763 7.30627C11.8955 4.64945 14.2856 2.21402 16.9779 0L20.0273 2.82288C20.4669 3.26568 20.7966 3.68081 21.0163 4.06827C21.1812 4.45572 21.2636 4.95388 21.2636 5.56273C21.2636 6.50369 20.7966 7.3893 19.8625 8.21956C19.3131 8.82841 18.5988 9.631 17.7197 10.6273C16.8405 11.6236 15.9614 12.7583 15.0823 14.0314C14.2032 15.3044 13.4065 16.7159 12.6922 18.2657C11.923 19.8155 11.3736 21.4483 11.0439 23.1642H11.456Z' fill='%23B097D0'/%3E%3C/svg%3E%0A");
+      width: 52px;
+      height: 45px;
+      top: -22px;
+      left: -72px;
     }
   }
 }
+
+.btn{
+  @include button-text;
+  width: 100%;
+  border: none;
+  background-color: map-get($colors, success);
+  border-radius: $radius-small;
+  padding: 6px 14px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover, &:focus{
+    outline: none;
+    background-color: darken(map-get($colors, success), 10);
+  }
+}
+
+a{
+  color: map-get($colors, success);
+  transition: 0.2s ease-in-out;
+  &:hover, &:focus{
+    outline: none;
+    color: darken(map-get($colors, success), 10);
+  }
+}
+
+.accepting{
+  @include caption-text;
+  color: map-get($colors, caption);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 32px;
+  .customCheck{
+    margin-right: 16px;
+  }
+}
+
+.customCheck{
+  &-input{
+    display: none !important;
+    &:checked + .customCheck-box{
+      &:before{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  &-box{
+    display: block;
+    min-width: 16px;
+    min-height: 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+    background-color: #A7A7A7;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;
+    &:before{
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.47149 9.73188L12.6667 3.53662L13.6096 4.47943L6.47149 11.6175L2.66675 7.81276L3.60956 6.86995L6.47149 9.73188Z' fill='white'/%3E%3C/svg%3E%0A");
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
+

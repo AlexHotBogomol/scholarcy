@@ -1,0 +1,8 @@
+.advantages{
+  padding: 120px 0;
+  &-title{
+    @include h1;
+    text-align: center;
+    padding-bottom: 88px;
+  }
+}
