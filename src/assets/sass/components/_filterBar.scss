@@ -1,0 +1,66 @@
+.filterBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-list, &-views{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &-list{
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin: 0 0 -20px;
+  }
+  &-item{
+    cursor: pointer;
+    min-width: 115px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background-color: map-get($colors, light);
+    color: map-get($colors, secondary-dark);
+    transition: 0.2s ease-in-out;
+    border: 1px solid map-get($colors, dark);
+    margin-right: 25px;
+    margin-bottom: 20px;
+    &.active, &:hover{
+      background-color: map-get($colors, accent1);
+      color: map-get($colors, light);
+      border-color: transparent;
+      .filterBar-link{
+        color: map-get($colors, light);
+      }
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &-link{
+    display: block;
+    padding: 0 20px;
+    color: map-get($colors, secondary-dark);
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+  }
+  &-views{
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &-view{
+    cursor: pointer;
+    color: map-get($colors, secondary-dark);
+    rect{
+      transition: 0.2s ease-in-out;
+    }
+    &:hover, &.active{
+      rect{
+        stroke: map-get($colors, accent1);
+      }
+    }
+  }
+}

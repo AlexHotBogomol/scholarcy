@@ -1,0 +1,7 @@
+.card{
+  &-title{
+    @include p2;
+    color: map-get($colors, secondary-dark);
+    margin-bottom: 20px;
+  }
+}

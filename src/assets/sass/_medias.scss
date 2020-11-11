@@ -1,0 +1,1262 @@
+@media only screen and (max-width: 1600px){
+  .header{
+    &-title{
+      span{
+        white-space: initial;
+      }
+    }
+  }
+  .lastCases{
+    margin-left: 30px;
+  }
+  .singleCase{
+    &-info{
+      padding-left: 10%;
+    }
+  }
+}
+@media only screen and (max-width: 1400px){
+  .clients {
+    .clients {
+      &-header {
+        width: auto;
+      }
+
+      &-list {
+        width: 100%;
+        margin-left: 30px;
+      }
+    }
+  }
+  .subscribe{
+    &:before{
+      left: 30%;
+    }
+  }
+  .popularPosts{
+    padding-top: 50px;
+    .post{
+      margin-bottom: 30px;
+    }
+  }
+  .blog{
+    padding-top: 70px;
+    &-title{
+      margin-left: 70px;
+    }
+  }
+  .reviews, .posts{
+    margin-left: 10%;
+  }
+  .single{
+    .bg{
+      &:before{
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  .singlePost{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &-cta{
+      right: 40px;
+      top: -30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px){
+  .reviews, .posts{
+    margin-left: 0;
+    padding: 100px 0 80px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    &-actions{
+      margin-right: 0;
+    }
+  }
+  .welcome, .projects{
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 1199px){
+  .header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+    .header-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .burger{
+      display: flex;
+    }
+    .logo{
+      position: static;
+      height: auto;
+      margin-top: 0;
+    }
+    .menu{
+      display: flex;
+      position: fixed;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      background: map-get($colors, accent1);
+      left: 0;
+      top: 80px;
+      width: 33%;
+      padding: 20px;
+      box-sizing: border-box;
+      min-width: 300px;
+      min-height: calc(100vh - 80px);
+      z-index: 20;
+      transition: 0.2s ease-in-out;
+      transform: translateX(-100%);
+      &-item{
+        width: 100%;
+        margin-bottom: 5px;
+        &:before, &:after{
+          display: none;
+        }
+        a{
+          width: 100%;
+          box-sizing: border-box;
+          margin: 0;
+          text-transform: uppercase;
+          color: map-get($colors, light);
+        }
+        &.current-menu-item{
+          &:after{
+            bottom: 50%;
+            left: 0;
+            margin-left: -15px;
+            margin-bottom: -10px;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.11087 17.4083C2.32508 16.7846 1.70075 16.0534 1.21636 15.2148C0.958019 14.7631 0.73197 14.2793 0.559742 13.7632C0.182992 12.6557 0 11.3976 0 10.0106C0 7.61275 0.635092 5.56978 1.90527 3.88164C2.74489 2.77414 3.82131 1.83867 5.11302 1.11826C5.78041 0.741921 6.50161 0.419346 7.27664 0.150535H8.90205C9.04198 0.0645148 9.3972 0 9.95694 0C10.5274 0 11.0872 0 11.7976 0.0645148C12.5081 0.12903 13.2078 0.279564 13.9182 0.419346C14.6286 0.634396 15.2637 0.838693 15.7589 1.19352C17.0291 2.18275 18.084 3.23649 18.8698 4.3655C19.6448 5.49451 20 6.82782 20 8.52671C20 8.78477 19.9892 9.04283 19.9677 9.31164C19.9031 10.3009 19.6986 11.3546 19.3649 12.3976C18.9451 13.7309 18.31 15.0105 17.535 16.1287C16.76 17.2577 15.7696 18.2469 14.7147 18.9459C13.5845 19.6448 12.3789 19.9996 10.9688 19.9996C7.69645 20.0211 5.0915 19.1717 3.11087 17.4083Z' fill='%23FF6B00'/%3E%3C/svg%3E%0A");
+          }
+        }
+      }
+    }
+    .lang-item{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top: auto;
+      text-align: right;
+      a{
+        padding: 10px 20px;
+      }
+    }
+    &-description{
+      width: 370px;
+    }
+    &.open{
+      .menu{
+        transform: translateX(0);
+      }
+    }
+  }
+  .lastCases{
+    &-slider{
+      .project{
+        width: 800px;
+      }
+    }
+  }
+  .welcome{
+    &-wrapper{
+      &:before{
+        left: -100px;
+      }
+    }
+  }
+  .gallery{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .clients{
+    .clients{
+      &-header{
+        display: none;
+      }
+      &-list{
+        margin-left: 0;
+      }
+    }
+  }
+  .info{
+    &-grid{
+      display: block;
+    }
+    &-title{
+      margin-left: 100px;
+    }
+    &--circle{
+      padding-top: 100px;
+    }
+    &--bg{
+      .info-title{
+        &:before{
+          display: none;
+        }
+      }
+    }
+  }
+  .contactUs{
+    padding-top: 50px;
+    &-subtitle{
+      margin-bottom: 30px;
+    }
+  }
+  .cta{
+    padding-bottom: 100px;
+  }
+  .footer{
+    padding-bottom: 50px;
+    &-logo{
+      width: 300px;
+    }
+  }
+  .post--horizontal .post-picture {
+    width: 400px;
+    min-width: 400px;
+    margin-right: 30px;
+  }
+  .seo{
+    margin-bottom: 50px;
+    &-img{
+      width: 400px;
+      margin-right: 30px;
+    }
+    &:nth-of-type(2n){
+      .seo-img{
+        margin-right: 0;
+        margin-left: 30px;
+      }
+    }
+  }
+  .skills{
+    &-link{
+      @include h3;
+    }
+  }
+  .bg:before{
+    left: 0;
+    right: 0;
+  }
+  .singlePost{
+    &-cta{
+      display: none;
+    }
+    &-content{
+      width: 100%;
+    }
+    img{
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .singleCase{
+    padding: 50px 0;
+    &-info{
+      //flex-direction: column-reverse;
+      margin-bottom: 130px;
+      padding-left: 5%;
+    }
+    &-left{
+      margin-right: 40px;
+    }
+    &-panel{
+      flex-direction: column;
+    }
+    &-img{
+      margin-bottom: 50px;
+    }
+    &-count{
+      margin-bottom: 150px;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .btn{
+    &--large{
+      @include h4;
+    }
+  }
+  .gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header{
+    &-info{
+      align-items: flex-start;
+    }
+  }
+  .popularPosts .post {
+    margin-bottom: 50px;
+  }
+  .post--horizontal{
+    flex-direction: column;
+    .post-picture{
+      width: auto;
+      max-width: 100%;
+      margin-right: 0;
+      min-width: unset;
+    }
+  }
+  .blog{
+    padding-top: 50px;
+    &-title{
+      margin-left: 0;
+      margin-bottom: 50px;
+      color: map-get($colors, dark);
+      &:after{
+        display: none;
+      }
+    }
+    &-grid{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .cases{
+    .project{
+      margin-bottom: 70px;
+    }
+    .filterBar-list{
+      width: 75%;
+    }
+    &--bars{
+      .cases-list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 60px 30px;
+      }
+      .project{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .aboutUs{
+    padding-top: 70px;
+  }
+  .persons{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  .offer{
+    padding-bottom: 30px;
+    &-picture{
+      span{
+        @include h3;
+      }
+    }
+  }
+  .cta{
+    &-left{
+      width: 400px;
+      min-width: 400px;
+      height: 313px;
+      min-height: 313px;
+      &:before{
+        width: 200px;
+        height: 165px;
+        background-size: contain;
+        top: -110px;
+        left: 40px;
+      }
+    }
+    &-right{
+      width: 200px;
+      min-width: 200px;
+      height: 283px;
+      min-height: 283px;
+    }
+    &-title, &-btn{
+      @include h4;
+    }
+    &-title{
+      top: 80px;
+      left: 55px;
+    }
+    &-btn{
+      bottom: 80px;
+      right: 60px;
+    }
+    &-container{
+      width: 500px;
+    }
+  }
+  .review{
+    flex-direction: column;
+    &-picture{
+      margin: 0 0 32px;
+    }
+  }
+  .testimonials{
+    .review{
+      align-self: center;
+      &:nth-of-type(even){
+        align-self: center;
+      }
+    }
+  }
+  .contactUs{
+    fieldset{
+      margin-left: 0;
+    }
+    .inputs{
+      margin-top: 20px;
+    }
+  }
+  .subscribe{
+    &-title{
+      &:before{
+        width: 250px;
+        height: 380px;
+      }
+    }
+    &:before{
+      width: 178px;
+      height: 179px;
+    }
+    .mc4wp-form{
+      margin-top: 40px;
+    }
+  }
+  .footer{
+    &-logo{
+      width: 150px;
+    }
+  }
+  h1, .has-h-1-font-size{
+    font-size: 50px;
+  }
+  .mc4wp-form .mc4wp-form-fields input{
+    width: 100%;
+  }
+  .service{
+    &-main{
+      flex-direction: column;
+      align-items: flex-start;
+      width: 400px;
+      margin-right: 30px;
+    }
+    &-img{
+      margin-bottom: 15px;
+    }
+    &-content{
+      .btn{
+        margin-left: 0;
+      }
+    }
+  }
+  .cta--services{
+    .cta-right{
+      left:0;
+
+    }
+    .cta-subtitle{
+      width:200px;
+      right: 10px;
+      bottom: -50px;
+      @include h5;
+      br{
+        display: none;
+      }
+    }
+  }
+  .animation{
+    display: none;
+  }
+  .skills {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .clients{
+    &-list{
+      height: 100px;
+    }
+  }
+  .projects{
+    padding: 50px 0;
+    &:before{
+      display: none;
+    }
+    &-title{
+      position: static;
+      margin-bottom: 65px;
+      margin-left: 15px;
+    }
+    .project{
+      margin-bottom: 50px;
+    }
+  }
+  .moving3, .projects-btn:before, .posts-btn:before{
+    animation: unset;
+  }
+  .reviews, .posts{
+    padding: 50px 0 80px 30px;
+  }
+  .reviews-slider {
+    padding-bottom: 120px;
+    margin-bottom: 50px;
+  }
+  .clients{
+    &-list{
+      height: 100px;
+    }
+  }
+  .singleCase{
+    padding-top: 0;
+    &-img{
+      width: auto;
+      height: auto;
+      max-height: 100%;
+      max-width: 100%;
+      display: block;
+    }
+    &-left{
+      margin-right: 0;
+      min-width: unset;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 30px;
+    }
+    &-info{
+      flex-direction: column-reverse;
+      padding: 0;
+    }
+    &-stats{
+      flex-wrap: wrap;
+    }
+    &-stat{
+      width: calc(50% - 40px);
+      align-items: center;
+    }
+  }
+  .lastCases{
+    &-slider{
+      .project{
+        width: 650px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .btn{
+    &--large{
+      @include h5;
+    }
+  }
+  .heading{
+    padding: 30px 15px;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    &-title{
+      margin-right: 0;
+      padding-left: 0;
+      margin-bottom: 30px;
+      color: map-get($colors, dark);
+      &:before{
+        display: none;
+      }
+    }
+  }
+  .header{
+    &-info{
+      flex-direction: column;
+    }
+    &-description{
+      width: 90%;
+    }
+    &-title{
+      position: static;
+      width: auto;
+      height: auto;
+      background: none;
+      margin-bottom: 30px;
+      span{
+        position: static;
+        word-spacing: inherit;
+      }
+    }
+  }
+  .aboutUs{
+    padding-top: 50px;
+    &-title{
+      margin-bottom: 40px;
+    }
+  }
+  .cta{
+    padding-top: 120px;
+    padding-bottom: 70px;
+  }
+  .person{
+    &-img{
+      height: 300px;
+    }
+  }
+  .seo{
+    flex-direction: column;
+    margin-bottom: 80px;
+    &-img{
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+    &-title{
+      padding-bottom: 30px;
+    }
+    &:nth-of-type(2n){
+      flex-direction: column;
+      .seo-img{
+        margin-left: 0;
+      }
+    }
+  }
+  .offer{
+    &-picture{
+      height: 300px;
+      min-width: 260px;
+      width: 260px;
+      margin-right: 30px;
+    }
+  }
+  .footer{
+    &-top{
+      flex-direction: column;
+    }
+    &-logo{
+      width: 100%;
+    }
+    &-nav{
+      width: 100%;
+    }
+    &-menu{
+      margin: 10px auto;
+    }
+    &-bottom{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &-subscribe{
+      margin-bottom: 15px;
+    }
+    &-extraMenu{
+      margin-bottom: 20px;
+    }
+  }
+  .subscribe{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &:before{
+      display: none;
+    }
+    &-title{
+      padding-left: 0;
+      &:before{
+        display: none;
+      }
+    }
+    .mc4wp-form{
+      position: static;
+    }
+  }
+  .filterBar-views{
+    display: none;
+  }
+  .cases{
+    padding-top: 50px;
+    &-title{
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+    &-wrapper{
+      padding: 0;
+    }
+    .filterBar-list{
+      width: 100%;
+      padding: 0 15px;
+    }
+    .filterBar-item{
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      height: auto;
+    }
+  }
+  .cases, .cases--bars, .projects, .lastCases{
+    overflow: hidden;
+    .cases-list{
+      display: block;
+    }
+    .project{
+      margin-bottom: 60px;
+      flex-direction: column;
+      height: auto;
+      &-top{
+        height: 250px;
+      }
+      &-left{
+        width: 100%;
+      }
+      &-logo{
+        height: 75px;
+        top: -200px;
+        left: 25px;
+        position: absolute;
+        width: 65px;
+      }
+      &-grid{
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &-category{
+        display: block;
+      }
+      &-content{
+        position: relative;
+        padding: 32px 15px 55px;
+        margin-bottom: 0;
+        border: none;
+        .btn{
+          display: inline-flex;
+          position: absolute;
+          bottom: 10px;
+        }
+      }
+      &-panel, &-stats{
+        width: 100%;
+      }
+      &-panel{
+        height: 80px;
+      }
+      &-stat{
+        @include p4;
+        padding: 5px 15px;
+        width: 50%;
+        align-items: flex-start;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        &:nth-child(3), &:nth-child(4){
+          display: flex;
+        }
+        span{
+          @include h6;
+        }
+      }
+    }
+  }
+  .cta.cta--services{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    .cta-right{
+      top: 30px;
+    }
+    .cta-subtitle{
+      @include h6;
+      width: 140px;
+      right: 40px;
+      bottom: 40px;
+    }
+  }
+  .skills{
+    &-link{
+      @include h4;
+    }
+  }
+  .swiper-buttons{
+    left: 0;
+  }
+  .reviews-slider {
+    padding-bottom: 100px;
+    margin-bottom: 30px;
+  }
+  .posts{
+    padding-top: 0;
+  }
+  .posts-title{
+    position: relative;
+    margin-bottom: 50px;
+    &:after{
+      display: none;
+    }
+  }
+  .lastCases{
+    &-slider{
+      .project{
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px){
+  .header{
+    .menu{
+      width: 100%;
+    }
+    &.open{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-color: map-get($colors, accent1) !important;
+      .logo{
+        color: map-get($colors, light);
+        svg path{
+          fill: map-get($colors, light);
+        }
+      }
+      .burger{
+        span{
+          background-color: map-get($colors, light);
+        }
+      }
+      &.header--secondary{
+        .logo svg path{
+          fill: map-get($colors, accent1);
+        }
+      }
+    }
+  }
+  .gallery{
+    grid-template-columns: 1fr;
+  }
+  .aboutUs{
+    &-title{
+      margin: 0 15px 40px;
+    }
+    &-wrapper{
+      padding: 0;
+    }
+  }
+  .offer{
+    padding-top: 0;
+    flex-direction: column;
+    &-picture{
+      margin-right: 0;
+      width: 100%;
+      height: 460px;
+      margin-bottom: 70px;
+    }
+    .btn{
+      margin: 0 15px;
+    }
+  }
+  .info{
+    padding: 50px 0;
+    &-title{
+      margin-left: 0;
+      color: map-get($colors, dark);
+      br{
+        display: none;
+      }
+      &:after{
+        display: none;
+      }
+    }
+    &-list{
+      display: block;
+    }
+    &-item{
+      margin-bottom: 30px;
+    }
+    &--circle{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      .info-title{
+        margin-bottom: 40px;
+      }
+    }
+    &--bg{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      .info-title{
+        position: static;
+      }
+    }
+  }
+  .persons{
+    display: block;
+  }
+  .person{
+    margin-bottom: 40px;
+    &-img{
+      height: 460px;
+    }
+    &-title{
+      margin: 0 15px 8px;
+    }
+    &-position{
+      margin: 0 15px;
+    }
+  }
+  .cta{
+    padding-top: 120px;
+    padding-bottom: 30px;
+    &-container{
+      width: 320px;
+    }
+    &-left{
+      width: 240px;
+      min-width: 240px;
+      height: 188px;
+      min-height: 188px;
+      &:before{
+        top: -120px;
+        left: 0;
+      }
+    }
+    &-right{
+      width: 146px;
+      min-width: 146px;
+      height: 207px;
+      min-height: 207px;
+      margin-left: -50px;
+    }
+    &-title, &-btn{
+      @include h5;
+    }
+    &-title{
+      top: 50px;
+      left: 35px;
+    }
+    &-btn{
+      bottom: 40px;
+      right: 10px;
+    }
+  }
+  .cta.cta--services{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    .cta-right{
+      top: 30px;
+    }
+    .cta-subtitle{
+      @include h6;
+      width: 140px;
+      right: -30px;
+      bottom: 40px;
+    }
+  }
+  .review{
+    .review{
+      &-content{
+        width: 100%;
+      }
+    }
+  }
+  .reviews-slider{
+    .review{
+      width: 320px;
+    }
+  }
+  .myRadio .wpcf7-list-item label span{
+    width: 100%;
+  }
+  .wpcf7-form-control-wrap, .myRadio, .myRadio .wpcf7-list-item, .myRadio .wpcf7-list-item label{
+    display: block;
+  }
+  .myRadio .wpcf7-list-item label{
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .popularPosts{
+    padding-top: 0;
+    &-wrapper{
+      padding: 0;
+    }
+  }
+  .post{
+    &-content{
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+    &-picture{
+      height: 250px;
+    }
+  }
+  .post--horizontal .post-picture{
+    height: 250px;
+  }
+  .blog{
+    padding-top: 0;
+    &-wrapper{
+      padding: 0;
+    }
+    &-title{
+      padding: 0 15px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+    &-grid{
+      display: block;
+    }
+    .post{
+      margin-bottom: 50px;
+    }
+    .filterBar-list{
+      width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+  }
+  .filterBar-item{
+    min-width: calc(50% - 30px);
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .seos{
+    padding-top: 0;
+    &-container{
+      padding: 0;
+    }
+  }
+  .seo{
+    &-img{
+      height: 400px;
+    }
+    &-content{
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+  }
+  .footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &-nav{
+      width: 100%;
+      min-width: unset;
+    }
+    &-bottom{
+      padding-top: 30px;
+    }
+    &-top{
+      padding-bottom: 0;
+    }
+    &-additional{
+      width: 100%;
+    }
+    &-extraMenu li {
+      margin-right: 20px;
+    }
+    &-menu{
+      width: 100%;
+      flex-direction: column;
+      &>li{
+        margin-left: 0;
+        ul{
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 20px;
+          li{
+            margin-right: 24px;
+          }
+        }
+      }
+    }
+  }
+  .cases, .cases--bars, .projects, .lastCases{
+    .project{
+      &-stat{
+        &:nth-child(3), &:nth-child(4){
+          display: none;
+        }
+      }
+    }
+  }
+  .reviews, .posts {
+    padding: 50px 0 80px 15px;
+  }
+  .posts-btn{
+    padding-left: 0;
+  }
+  .logo{
+    left: 15px;
+  }
+  .skills{
+    background-color: map-get($colors, secondary-light);
+    &-item{
+      display: block;
+      margin-bottom: 16px;
+    }
+    &-link{
+      @include h5;
+    }
+  }
+  .projects{
+    padding: 0 0 50px;
+  }
+  h1, .has-h-1-font-size{
+    font-size: 37px;
+  }
+  h2, .has-h-2-font-size{
+    font-size: 28px;
+  }
+  h3, .has-h-3-font-size {
+    font-size: 24px;
+  }
+  h4, .has-h-4-font-size{
+    font-size: 21px;
+  }
+  .testimonials{
+    padding-top: 50px;
+  }
+  .page-template-testimonials{
+    .navigation{
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+  }
+  .service{
+    padding: 20px 0;
+    flex-direction: column;
+    &-main{
+      margin-right: 0;
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  .posts{
+    &-title{
+      position: static;
+      padding-left: 0;
+      height: auto;
+      color: map-get($colors, dark);
+      margin-bottom: 0;
+      padding-bottom: 40px;
+      &:before{
+        display: none;
+      }
+    }
+  }
+  .reviews{
+    padding-bottom: 50px;
+  }
+  .posts-slider .post {
+    width: 320px;
+  }
+  .singleCase{
+    &-count{
+
+      margin-bottom: 80px;
+      &:before{
+        width: 218px;
+        height: 176px;
+      }
+    }
+    &-panel{
+      align-items: flex-start;
+    }
+    &-stat{
+      width: 100%;
+      span{
+        @include h4;
+      }
+    }
+    &-info{
+      margin-bottom: 80px;
+    }
+  }
+  .lastCases{
+    &-slider{
+      .project{
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 374px){
+  .cta{
+    &-container{
+      width: 300px;
+    }
+    &-right{
+      margin-left: -90px;
+    }
+    &-title{
+      top: 40px;
+      left: 30px;
+    }
+    &-btn{
+      bottom: 35px;
+      right: 30px;
+    }
+  }
+  .subscribe{
+    &-title{
+      @include h4;
+    }
+  }
+  .mc4wp-form{
+    width: 100%;
+  }
+  .filterBar-item {
+    min-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .cta.cta--services{
+    .cta-title{
+      top: 40%;
+      left: 20px;
+    }
+    .cta-subtitle{
+      right: 0;
+      bottom: 20px;
+    }
+  }
+}
+
+
+@media only screen and (orientation: landscape) and (max-width: 900px){
+  .welcome{
+    padding-top: 35px;
+  }
+  .header{
+    .menu{
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      &-item{
+        width: 50%;
+      }
+      &:before{
+        left: auto;
+        right: 0;
+      }
+    }
+    &.open{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-color: map-get($colors, accent1) !important;
+      .logo{
+        color: map-get($colors, light);
+        svg path{
+          fill: map-get($colors, light);
+        }
+      }
+      .burger{
+        span{
+          background-color: map-get($colors, light);
+        }
+      }
+      &.header--secondary{
+        .logo svg path{
+          fill: map-get($colors, accent1);
+        }
+      }
+    }
+  }
+}

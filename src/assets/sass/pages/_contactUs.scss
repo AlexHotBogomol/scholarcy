@@ -1,0 +1,74 @@
+.contactUs{
+  padding-top: 100px;
+  position: relative;
+  &-wrapper{
+    width: 1200px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0 auto;
+    br{
+      display: none;
+    }
+  }
+  &-title{
+    position: absolute;
+    z-index: 3;
+    left: 150px;
+    bottom: 200px;
+    &:before, &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: -1;
+      background-image: url("../images/illustration/girl.png");
+      width: 367px;
+      height: 287px;
+      top: -250px;
+      left: -90px;
+    }
+    &:after{
+      left: -235px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url("data:image/svg+xml,%3Csvg width='314' height='447' viewBox='0 0 314 447' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M313.707 185.619C313.078 170.705 311.448 155.848 308.989 141.136C304.958 116.893 298.239 91.7295 282.572 72.2952C266.589 52.4866 242.973 35.8162 220.901 23.6086C201.431 12.8405 180.903 2.76347 158.802 0.48893C122.95 -3.22519 87.2112 14.5968 62.6518 41.1715C33.6608 72.5255 18.2504 117.728 7.98635 158.584C0.00954247 190.37 -1.99181 223.681 1.9823 256.245C3.89788 271.936 6.81413 288.117 12.3607 302.916C17.8216 317.485 20.9379 333.723 28.6002 347.428C37.7493 363.81 51.0725 377.774 66.4258 388.341C109.598 418.082 167.465 428.937 214.869 403.427C213.725 404.061 233.024 424.964 234.939 426.605C244.632 434.753 255.896 440.972 267.933 444.743C270.478 445.55 281.514 448.976 283.058 445.406C284.287 442.555 276.939 437.114 275.424 435.357C262.901 421.048 253.552 403.917 248.263 385.605C247.205 381.949 246.29 378.062 247.119 374.348C249.092 365.394 259.07 361.248 264.388 354.597C271.507 345.643 277.854 335.594 283.429 325.575C295.666 303.549 304.072 279.422 308.846 254.661C313.278 231.945 314.679 208.767 313.707 185.619Z' fill='%237E4DBC'/%3E%3C/svg%3E%0A");
+      width: 314px;
+      height: 447px;
+      z-index: -1;
+    }
+    @media only screen and (max-width: 1600px){
+      display: none;
+    }
+  }
+  &-subtitle{
+    position: relative;
+    margin-bottom: 80px;
+    &:before{
+      content: "";
+      display: block;
+      width: 500px;
+      height: 2px;
+      top: 50%;
+      margin-top: -1px;
+      background-color: map-get($colors, secondary-dark);
+      position: absolute;
+      right: calc(100% + 25px);
+    }
+  }
+  fieldset{
+    margin-left: 250px;
+    padding: 0;
+    border: none;
+    .btn{
+      margin-top: 40px;
+    }
+  }
+  .inputs{
+    width: 590px;
+    max-width: 100%;
+    margin-top: 90px;
+  }
+}

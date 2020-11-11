@@ -1,0 +1,25 @@
+.input, .textarea{
+  @include p3;
+  width: 100%;
+  padding: 8px;
+  height: 50px;
+  box-sizing: border-box;
+  color: map-get($colors, dark);
+  border: 1px solid map-get($colors, secondary-dark);
+  border-radius: 0;
+  transition: 0.2s ease-in-out;
+  &::placeholder{
+    color: rgba(map-get($colors, dark), 0.3);
+  }
+  &:hover{
+    border-color: map-get($colors, accent1);
+  }
+  &:focus{
+    border: 2px solid map-get($colors, accent1);
+    outline: none;
+  }
+}
+
+.textarea{
+  resize: none;
+}

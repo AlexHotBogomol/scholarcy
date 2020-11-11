@@ -1,0 +1,96 @@
+@mixin h1{
+  font-size: 67px;
+  line-height: 1.2;
+  font-family: $font-heading;
+}
+@mixin h2{
+  font-size: 50px;
+  line-height: 1.2;
+  font-family: $font-heading;
+}
+@mixin h3{
+  font-size: 37px;
+  line-height: 1.2;
+  font-family: $font-heading;
+}
+@mixin h4{
+  font-size: 28px;
+  line-height: 1.2;
+  font-family: $font-heading;
+}
+@mixin h5{
+  font-size: 21px;
+  line-height: 1.5;
+  font-family: $font-heading;
+}
+@mixin h6{
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: $font-heading;
+}
+
+@mixin p1{
+  font-family: $font-common;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@mixin p2{
+  font-family: $font-common;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@mixin p3{
+  font-family: $font-common;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+@mixin p4{
+  font-family: $font-common;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+h1, .has-h-1-font-size{
+  @include h1;
+}
+
+h2, .has-h-2-font-size{
+  @include h2;
+}
+
+h3, .has-h-3-font-size{
+  @include h3;
+}
+
+h4, .has-h-4-font-size{
+  @include h4;
+}
+
+h5, .has-h-5-font-size{
+  @include h5;
+}
+
+.p1, .has-p-1-font-size{
+  @include p1;
+}
+
+.p2, .has-p-2-font-size{
+  @include p2;
+}
+
+.p3, .has-p-3-font-size{
+  @include p3;
+}
+
+.p4, .has-p-4-font-size{
+  @include p4;
+}

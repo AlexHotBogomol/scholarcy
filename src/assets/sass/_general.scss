@@ -1,0 +1,116 @@
+body{
+  @include p3;
+  color: map-get($colors, dark);
+  min-width: 320px;
+  overflow-x: hidden;
+  background-color: map-get($colors, light);
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bg{
+  position: relative;
+  //z-index: 1;
+  &:before{
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 90px;
+    right: 90px;
+    position: absolute;
+    background-color: map-get($colors, secondary-light);
+    z-index: -1;
+  }
+}
+
+.has-accent-1-color{
+  color: map-get($colors, accent1);
+}
+.has-accent-2-color{
+  color: map-get($colors, accent2);
+}
+.has-dark-color{
+  color: map-get($colors, dark);
+}
+.has-light-color{
+  color: map-get($colors, light);
+}
+.has-secondary-dark-color{
+  color: map-get($colors, secondary-dark);
+}
+.has-secondary-medium-color{
+  color: map-get($colors, secondary-medium);
+}
+.has-secondary-light-color{
+  color: map-get($colors, secondary-light);
+}
+.has-bg-color{
+  color: map-get($colors, bg);
+}
+.has-success-color{
+  color: map-get($colors, success);
+}
+.has-error-color{
+  color: map-get($colors, error);
+}
+
+.wrapper{
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px 15px;
+  box-sizing: border-box;
+}
+
+.swiper-slide {
+  width: auto !important;
+}
+.wp-block-embed{
+  margin: 0 0 60px;
+}
+
+main{
+  overflow: hidden;
+}
+
+.mc4wp-alert.mc4wp-success{
+  color: map-get($colors, success);
+}
+
+.mc4wp-alert.mc4wp-error{
+  color: map-get($colors, error);
+}
+
+.pageSlider{
+  content: "";
+  position: fixed;
+  width: 200%;
+  height: 100vh;
+  display: none;
+  background: rgba(255,107,0,1);
+  z-index: 50;
+}
+
+.breadcrumb{
+  padding: 30px 0;
+  width: 1200px;
+  margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  span{
+    @include p3;
+    font-size: 18px;
+  }
+  a{
+    color: map-get($colors, dark);
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    &:hover{
+      color: map-get($colors, accent2);
+    }
+  }
+}

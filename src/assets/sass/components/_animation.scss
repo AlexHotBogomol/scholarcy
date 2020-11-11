@@ -1,0 +1,117 @@
+.animation{
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  &--1{
+    background-image: url('../images/anima/1.png');
+    width: 410px;
+    height: 228px;
+    bottom: -80px;
+    left: -30px;
+    @media only screen and (max-width: 1600px){
+      left: -230px;
+    }
+    @media only screen and (max-width: 1350px){
+      left: -330px;
+    }
+  }
+  &--2{
+    background-image: url('../images/anima/2.png');
+    width: 136px;
+    height: 127px;
+    bottom: 80px;
+    left: 250px;
+    @media only screen and (max-width: 1600px){
+      left: 50px;
+    }
+    @media only screen and (max-width: 1350px){
+      left: -50px;
+    }
+  }
+  &--3{
+    background-image: url('../images/anima/3.png');
+    width: 222px;
+    height: 248px;
+    bottom: 140px;
+    left: 170px;
+    @media only screen and (max-width: 1600px){
+      left: -30px;
+    }
+    @media only screen and (max-width: 1350px){
+      left: -130px;
+    }
+  }
+  &--4{
+    background-image: url('../images/anima/4.png');
+    width: 242px;
+    height: 239px;
+    top: -30px;
+    right: 700px;
+    @media only screen and (max-width: 1600px){
+      right: 500px;
+    }
+    @media only screen and (max-width: 1350px){
+      right: 400px;
+    }
+    @media only screen and (max-width: 1199px){
+      right: 300px;
+    }
+  }
+  &--5{
+    background-image: url('../images/anima/5.png');
+    width: 225px;
+    height: 151px;
+    top: 100px;
+    right: 530px;
+    @media only screen and (max-width: 1600px){
+      right: 330px;
+    }
+    @media only screen and (max-width: 1350px){
+      right: 230px;
+    }
+    @media only screen and (max-width: 1199px){
+      right: 130px;
+    }
+  }
+  &--6{
+    background-image: url('../images/anima/6.png');
+    width: 89px;
+    height: 105px;
+    top: 160px;
+    right: 450px;
+    @media only screen and (max-width: 1600px){
+      right: 250px;
+    }
+    @media only screen and (max-width: 1350px){
+      right: 150px;
+    }
+    @media only screen and (max-width: 1199px){
+      right: 50px;
+    }
+  }
+  &--7{
+    background-image: url('../images/anima/7.png');
+    width: 418px;
+    height: 373px;
+    top: -170px;
+    right: 170px;
+    @media only screen and (max-width: 1600px){
+      right: -30px;
+    }
+    @media only screen and (max-width: 1350px){
+      right: -130px;
+    }
+    @media only screen and (max-width: 1199px){
+      right: -230px;
+    }
+  }
+  &--coma{
+    background-image: url('../images/anima/coma.svg');
+    width: 75px;
+    height: 107px;
+    right: 115px;
+    bottom: 110px;
+  }
+}

@@ -1,0 +1,76 @@
+.myRadio{
+  .wpcf7-list-item{
+    margin: 0;
+    label{
+      display: inline-block;
+      margin-right: 26px;
+      margin-bottom: 34px;
+      input{
+        position: absolute;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        visibility: hidden;
+        &:checked + span{
+          background-color: map-get($colors, accent2);
+          border-color: map-get($colors, accent2);
+          color: map-get($colors, light);
+        }
+      }
+      span{
+        min-width: 175px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid map-get($colors, secondary-dark);
+        transition: 0.2s ease-in-out;
+        background-color: map-get($colors, light);
+        &:hover, &:focus{
+          background-color: rgba(map-get($colors, accent2), 0.7);
+          border-color: map-get($colors, accent2);
+          color: map-get($colors, light);
+        }
+      }
+    }
+  }
+}
+.myRadio{
+  &-label{
+    display: inline-block;
+    margin-right: 26px;
+    margin-bottom: 34px;
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
+  &-input{
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    &:checked + .myRadio-box{
+      background-color: map-get($colors, accent2);
+      border-color: map-get($colors, accent2);
+      color: map-get($colors, light);
+    }
+  }
+  &-box{
+    width: 175px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid map-get($colors, secondary-dark);
+    transition: 0.2s ease-in-out;
+    &:hover, &:focus{
+      background-color: rgba(map-get($colors, accent2), 0.7);
+      border-color: map-get($colors, accent2);
+      color: map-get($colors, light);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.navigation{
+  .screen-reader-text{
+    display: none;
+  }
+  .nav-links{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  width: 1170px;
+  margin: 0 auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 70px 20px;
+  text-align: right;
+  .arr{
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+    &-prev{
+      color: map-get($colors, secondary-dark);
+      &:hover{
+        color: map-get($colors, accent1);
+      }
+    }
+    &-next{
+      color: map-get($colors, accent1);
+      &:hover{
+        color: map-get($colors, accent2);
+      }
+    }
+  }
+}
